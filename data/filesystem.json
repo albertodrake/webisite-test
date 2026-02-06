@@ -1,0 +1,257 @@
+{
+  "name": "root",
+  "type": "folder",
+  "path": "/",
+  "children": [
+    {
+      "name": "home",
+      "type": "folder",
+      "path": "/home",
+      "children": [
+        {
+          "name": "drake",
+          "type": "folder",
+          "path": "/home/drake",
+          "children": [
+            {
+              "name": "About_Me.md",
+              "type": "file",
+              "path": "/home/hedge/About_Me.md",
+              "fileType": "markdown",
+              "icon": "file-text",
+              "content": "# About Alberto Drake\n\n**he/him**\n\nHello! I'm Alberto Drake, and I create exceptional digital experiences!\n\n## What I Do\n\n- Premium Software Development\n- Creative Digital Design\n- Interactive Web Experiences\n- Technology Innovation\n\n## Contact\n\n- **Email**: alberto@drakedigital.com\n- **GitHub**: [AlbertoDrake](https://github.com/AlbertoDrake)\n- **Portfolio**: [drakedigital.com](https://drakedigital.com)\n- **LinkedIn**: [Alberto Drake](https://linkedin.com/in/albertodrake)\n\n## About This Site\n\nWelcome to Drake OS - a premium file browser experience. Navigate through folders, open files, and explore the digital realm!\n\n> Press `Ctrl+H` to reveal hidden files."
+            },
+            {
+              "name": "Applications",
+              "type": "folder",
+              "path": "/home/drake/Applications",
+              "icon": "app-window",
+              "children": [
+                {
+                  "name": "countdown.app",
+                  "type": "file",
+                  "path": "/home/drake/Applications/countdown.app",
+                  "fileType": "app",
+                  "icon": "clock",
+                  "appType": "countdown",
+                  "config": {
+                    "targetDate": "August 8, 2026 00:00:00 GMT-0800",
+                    "title": "Special Event Countdown",
+                    "message": "Congratulations Alberto Drake!"
+                  }
+                },
+                {
+                  "name": "music_player.app",
+                  "type": "file",
+                  "path": "/home/drake/Applications/music_player.app",
+                  "fileType": "app",
+                  "icon": "music",
+                  "appType": "audio",
+                    "config": {
+                    "title": "Drake OS Music Player",
+                    "assetsPath": "assets/",
+                    "tracks": [
+                      { "name": "Let You Know", "file": "Let You Know.mp3" },
+                      { "name": "Nice2KnowU", "file": "Nice2KnowU.mp3" }
+                    ],
+                    "playlists": {
+                      "Drake's Favorites": [
+                        { "name": "Nice2KnowU", "file": "Nice2KnowU.mp3" },
+                        { "name": "Let You Know", "file": "Let You Know.mp3" }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Portfolio",
+              "type": "folder",
+              "path": "/home/drake/Portfolio",
+              "icon": "box",
+              "children": [
+                {
+                  "name": "MakerWorld.link",
+                  "type": "file",
+                  "path": "/home/drake/Portfolio/Portfolio.link",
+                  "fileType": "link",
+                  "icon": "external-link",
+                  "external": true,
+                  "url": "https://drakedigital.com",
+                  "description": "Visit my premium portfolio website"
+                },
+                {
+                  "name": "README.md",
+                  "type": "file",
+                  "path": "/home/drake/Portfolio/README.md",
+                  "fileType": "markdown",
+                  "icon": "file-text",
+                  "content": "# Digital Portfolio\n\nI create premium digital experiences and design solutions.\n\n## Featured Work\n\nVisit my [portfolio website](https://drakedigital.com) to see all my premium designs!\n\n## Tools & Technologies\n\n- Modern development frameworks\n- Advanced design software\n- Always pushing digital boundaries"
+                }
+              ]
+            },
+            {
+              "name": "Socials",
+              "type": "folder",
+              "path": "/home/drake/Socials",
+              "icon": "users",
+              "children": [
+                {
+                  "name": "GitHub.link",
+                  "type": "file",
+                  "path": "/home/drake/Socials/GitHub.link",
+                  "fileType": "link",
+                  "icon": "github",
+                  "external": true,
+                  "url": "https://github.com/AlbertoDrake",
+                  "description": "My GitHub profile - premium code and projects"
+                },
+                {
+                  "name": "YouTube.link",
+                  "type": "file",
+                  "path": "/home/drake/Socials/YouTube.link",
+                  "fileType": "link",
+                  "icon": "youtube",
+                  "external": true,
+                  "url": "https://www.youtube.com/channel/UCkqQnrAIUrOufcdjBTFCtUg/",
+                  "description": "My YouTube channel"
+                },
+                {
+                  "name": "Steam.link",
+                  "type": "file",
+                  "path": "/home/drake/Socials/Steam.link",
+                  "fileType": "link",
+                  "icon": "gamepad-2",
+                  "external": true,
+                  "url": "https://steamcommunity.com/profiles/76561197979713029/",
+                  "description": "My Steam profile - let's play!"
+                },
+                {
+                  "name": "Email.link",
+                  "type": "file",
+                  "path": "/home/drake/Socials/Email.link",
+                  "fileType": "link",
+                  "icon": "mail",
+                  "external": true,
+                  "url": "mailto:alberto@drakedigital.com",
+                  "description": "Contact me directly"
+                },
+                {
+                  "name": "Patreon.link",
+                  "type": "file",
+                  "path": "/home/drake/Socials/LinkedIn.link",
+                  "fileType": "link",
+                  "icon": "heart",
+                  "external": true,
+                  "url": "https://linkedin.com/in/albertodrake",
+                  "description": "Connect with me on LinkedIn"
+                }
+              ]
+            },
+            {
+              "name": "Projects",
+              "type": "folder",
+              "path": "/home/drake/Projects",
+              "icon": "folder-code",
+              "children": [
+                {
+                  "name": "Portfolio.sh",
+                  "type": "file",
+                  "path": "/home/drake/Projects/Portfolio.sh",
+                  "fileType": "shell",
+                  "icon": "terminal",
+                  "content": "#!/bin/bash\n# Portfolio Script - Alberto Drake's Projects\n# Run with: ./Portfolio.sh\n\necho \"Loading portfolio...\"\necho \"\"\n\n# Define projects\nprojects=(\n    \"Drake OS - This premium website you're viewing right now!\"\n    \"Digital Design - Cutting-edge creative solutions\"\n    \"Open Source - Premium contributions on GitHub\"\n    \"Innovation - Pushing digital boundaries\"\n)\n\necho \"=== ALBERTO DRAKE'S PROJECTS ===\"\necho \"\"\n\nfor project in \"${projects[@]}\"; do\n    echo \">> $project\"\n    sleep 0.5\ndone\n\necho \"\"\necho \"Portfolio loaded successfully!\"\necho \"Visit GitHub for more: github.com/AlbertoDrake\""
+                },
+                {
+                  "name": "DrakeOS.md",
+                  "type": "file",
+                  "path": "/home/drake/Projects/DrakeOS.md",
+                  "fileType": "markdown",
+                  "icon": "file-text",
+                  "content": "# Drake OS\n\nA premium file browser personal website with modern aesthetics.\n\n## Features\n\n- Premium file browser navigation\n- Glassmorphism windows\n- Advanced terminal system\n- Hidden files (Ctrl+H)\n- Custom sleek cursor\n- Ambient background music\n- Bottom taskbar interface\n\n## Tech Stack\n\n- Modern HTML5, CSS3, JavaScript\n- Lucide Icons\n- JetBrains Mono + Inter fonts\n- Glassmorphism design\n\n## Credits\n\nBuilt with excellence by Alberto Drake."
+                }
+              ]
+            },
+            {
+              "name": "Media",
+              "type": "folder",
+              "path": "/home/drake/Media",
+              "icon": "film",
+              "children": [
+                {
+                  "name": "music_player.app",
+                  "type": "file",
+                  "path": "/home/drake/Media/music_player.app",
+                  "fileType": "app",
+                  "icon": "music",
+                  "appType": "audio",
+                  "config": {
+                    "title": "Music Player",
+                    "assetsPath": "assets/",
+                    "tracks": [
+                      { "name": "Nice2KnowU", "file": "Nice2KnowU.mp3" },
+                      { "name": "Let You Know", "file": "Let You Know.mp3" }
+                    ]
+                  }
+                },
+                {
+                  "name": "YouTube_Channel.link",
+                  "type": "file",
+                  "path": "/home/drake/Media/YouTube_Channel.link",
+                  "fileType": "link",
+                  "icon": "youtube",
+                  "external": true,
+                  "url": "https://www.youtube.com/channel/UCkqQnrAIUrOufcdjBTFCtUg/",
+                  "description": "Watch my latest videos on YouTube"
+                }
+              ]
+            },
+            {
+              "name": "Archives",
+              "type": "folder",
+              "path": "/home/drake/Archives",
+              "icon": "archive",
+              "children": [
+                {
+                  "name": "old_site.tar.gz",
+                  "type": "file",
+                  "path": "/home/drake/Archives/old_site.tar.gz",
+                  "fileType": "archive",
+                  "icon": "file-archive",
+                  "description": "Previous digital designs (archived)"
+                }
+              ]
+            },
+            {
+              "name": ".secret",
+              "type": "folder",
+              "path": "/home/drake/.secret",
+              "icon": "lock",
+              "hidden": true,
+              "children": [
+                {
+                  "name": "easter_egg.txt",
+                  "type": "file",
+                  "path": "/home/drake/.secret/easter_egg.txt",
+                  "fileType": "text",
+                  "icon": "file-text",
+                  "hidden": true,
+                  "content": "You found the secret!\n\nExcellent discovery! :)\n\nThanks for exploring Drake OS! :D"
+                },
+                {
+                  "name": ".bashrc",
+                  "type": "file",
+                  "path": "/home/drake/.secret/.bashrc",
+                  "fileType": "shell",
+                  "icon": "terminal",
+                  "hidden": true,
+                  "content": "# ~/.bashrc\n# Alberto Drake's bash configuration for Drake OS\n\n# If not running interactively, don't do anything\ncase $- in\n    *i*) ;;\n      *) return;;\nesac\n\n# History settings\nHISTCONTROL=ignoreboth\nHISTSIZE=1000\nHISTFILESIZE=2000\n\n# Aliases\nalias ll='ls -la'\nalias la='ls -A'\nalias l='ls -CF'\nalias gs='git status'\nalias gp='git push'\nalias cls='clear'\n\n# Custom prompt with timestamp\n# Format: [HH:MM:SS] drake@drakeos:~$\nexport PS1='[\\t] \\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ '\n\n# Startup messages\necho \"Drake OS v2.0 initialized\"\necho \"Loading premium filesystem...\"\necho \"System ready\"\necho \"Welcome to Drake OS!\""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

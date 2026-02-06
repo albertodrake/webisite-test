@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+  ls -la
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drake OS ~ /home/drake</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Alberto Drake's personal website - A premium file browser experience">
+  <meta property="og:title" content="Drake OS">
+  <meta property="og:description" content="Alberto Drake's personal website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://github.com/AlbertoDrake.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="custom-cursor">
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Drake OS Container -->
+  <div class="drakeos">
+    <!-- Status Bar -->
+    <header class="statusbar">
+      <div class="statusbar-left">
+        <span id="statusTime">00:00 AM</span>
+      </div>
+      <div class="statusbar-center">
+        <span>Alberto Drake</span>
+      </div>
+      <div class="statusbar-right">
+        <button class="header-btn" id="audioToggle" title="Toggle Music">
+          <i data-lucide="volume-x"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Desktop Area -->
+    <main class="desktop">
+      <div class="desktop-icons" id="desktopIcons">
+        <a href="#" class="desktop-icon" data-path="/home/drake">
+          <i data-lucide="home"></i>
+          <span>Home</span>
+        </a>
+        <a href="#" class="desktop-icon" data-path="/home/drake/Projects">
+          <i data-lucide="folder-code"></i>
+          <span>Projects</span>
+        </a>
+        <a href="#" class="desktop-icon" data-path="/home/drake/Socials">
+          <i data-lucide="users"></i>
+          <span>Socials</span>
+        </a>
+        <a href="#" class="desktop-icon" data-path="/home/drake/Portfolio">
+          <i data-lucide="briefcase"></i>
+          <span>Portfolio</span>
+        </a>
+      </div>
+      
+      <!-- File Grid (for folder navigation) -->
+      <div class="file-grid" id="fileGrid" style="display: none;">
+        <!-- Populated by JavaScript -->
+      </div>
+    </main>
+
+    <!-- Taskbar -->
+    <footer class="taskbar">
+      <div class="taskbar-start">
+        <button class="taskbar-btn" id="startBtn">
+          <i data-lucide="play"></i>
+          <span>Start</span>
+        </button>
+      </div>
+      <div class="taskbar-center">
+        <div class="breadcrumbs" id="breadcrumbs" style="margin: 0;">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+      <div class="taskbar-end">
+        <button class="taskbar-btn" id="terminalToggle">
+          <i data-lucide="terminal"></i>
+        </button>
+      </div>
+    </footer>
+
+    <!-- Draggable Terminal -->
+    <footer class="terminal" id="terminalWindow">
+      <div class="terminal-header">
+        <div class="terminal-title">
+          <i data-lucide="terminal"></i>
+          <span>Terminal</span>
+        </div>
+        <div class="terminal-controls">
+          <button class="terminal-btn" id="clearTerminal" title="Clear">
+            <i data-lucide="trash-2"></i>
+          </button>
+        </div>
+      </div>
+      <div class="terminal-output" id="terminalOutput">
+        <!-- Populated by JavaScript -->
+      </div>
+      <div class="terminal-input-line">
+        <span class="terminal-input-prompt">drake@drakeos:~$</span>
+        <span class="terminal-cursor"></span>
+      </div>
+    </footer>
+
+    <!-- Message Panel (Guestbook) -->
+    <aside class="message-panel" id="messagePanel">
+      <button class="message-panel-toggle" id="messagePanelToggle" title="Toggle Guestbook">
+        <i data-lucide="message-square"></i>
+      </button>
+      <div class="message-panel-content">
+        <div class="message-panel-header">
+          <h3>Guestbook</h3>
+        </div>
+        <div class="messages-list" id="messagesList">
+          <div class="messages-loading">Loading messages...</div>
+        </div>
+        <form class="message-form" id="messageForm">
+          <input type="text" name="name" placeholder="Your name" required maxlength="50">
+          <textarea name="message" placeholder="Leave a message..." required maxlength="500"></textarea>
+          <button type="submit">Post</button>
+        </form>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Windows Container -->
+  <div class="windows-container" id="windowsContainer">
+    <!-- Windows populated by JavaScript -->
+  </div>
+
+
+
+  <!-- Mobile Message Panel Overlay -->
+  <div class="message-panel-overlay" id="messagePanelOverlay"></div>
+
+  <!-- Background Audio - Drake OS Startup Sound -->
+  <audio id="bgAudio">
+    <source src="assets/audio/Nice2KnowU.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- JavaScript Modules -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

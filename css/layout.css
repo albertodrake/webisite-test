@@ -1,0 +1,197 @@
+.drakeos {
+  display: grid;
+  grid-template-columns: 1fr var(--message-panel-width);
+  grid-template-rows: var(--statusbar-height) 1fr var(--taskbar-height);
+  grid-template-areas:
+    "statusbar messagepanel"
+    "desktop messagepanel"
+    "taskbar messagepanel";
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+/* Message panel collapsed state */
+.drakeos.message-panel-collapsed {
+  grid-template-columns: 1fr var(--message-panel-collapsed);
+}
+
+/* Status Bar - Transparent Top Bar */
+.statusbar {
+  grid-area: statusbar;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-md);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--glass-border);
+  z-index: var(--z-header);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+}
+
+/* Desktop Area */
+.desktop {
+  grid-area: desktop;
+  position: relative;
+  overflow: auto;
+  padding: var(--desktop-padding);
+  background: var(--bg-primary);
+}
+
+/* Desktop Icons */
+.desktop-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: var(--space-md);
+  max-width: 600px;
+}
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm);
+  border-radius: var(--space-sm);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: var(--font-size-xs);
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.desktop-icon:hover {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+}
+
+.desktop-icon i {
+  font-size: 24px;
+  color: var(--accent-primary);
+}
+
+/* Taskbar - Bottom Bar */
+.taskbar {
+  grid-area: taskbar;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-md);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border-top: 1px solid var(--glass-border);
+  z-index: var(--z-header);
+}
+
+.taskbar-start {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.taskbar-center {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.taskbar-end {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.taskbar-btn {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-xs);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.taskbar-btn:hover {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+}
+
+/* Draggable Terminal Window */
+.terminal {
+  position: fixed;
+  bottom: var(--taskbar-height);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 200px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--space-sm) var(--space-sm) 0 0;
+  z-index: var(--z-terminal);
+  display: none;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+}
+
+.terminal.visible {
+  display: flex;
+}
+
+.terminal.minimized {
+  height: 32px;
+}
+
+.windows-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: var(--z-window);
+}
+
+.windows-container > * {
+  pointer-events: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .drakeos {
+    grid-template-columns: 1fr var(--message-panel-collapsed);
+    grid-template-rows: var(--statusbar-height) 1fr var(--taskbar-height);
+    grid-template-areas:
+      "statusbar messagepanel"
+      "desktop messagepanel"
+      "taskbar messagepanel";
+  }
+
+  .drakeos.message-panel-collapsed {
+    grid-template-columns: 1fr var(--message-panel-collapsed);
+  }
+
+  .desktop-icons {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  }
+
+  .terminal {
+    width: 90%;
+    left: 5%;
+    transform: none;
+  }
+
+  .statusbar-center {
+    display: none;
+  }
+}

@@ -1,0 +1,78 @@
+:root {
+  /* === DRAKE OS THEME - PREMIUM DARK (PURPLE/GOLD) === */
+
+  /* Primary Background Colors - Deep Midnight */
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #14141a;
+  --bg-tertiary: #1e1e2a;
+  --bg-hover: #2a2a3a;
+  --bg-active: #33334a;
+
+  /* Accent Colors - Purple/Gold */
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #fbbf24;
+  --accent-tertiary: #c084fc;
+  --accent-glow: rgba(139, 92, 246, 0.4);
+  --accent-gradient: linear-gradient(135deg, #8b5cf6, #fbbf24);
+
+  /* Text Colors */
+  --text-primary: #e0e0e0;
+  --text-secondary: #888888;
+  --text-tertiary: #555555;
+  --text-accent: var(--accent-primary);
+
+  /* Border Colors */
+  --border-primary: #2a2a2a;
+  --border-secondary: #3a3a3a;
+  --border-accent: var(--accent-primary);
+
+  /* Semantic Colors */
+  --folder-color: #c084fc;
+  --file-color: #e0e0e0;
+  --executable-color: #8b5cf6;
+  --link-color: #fbbf24;
+  --hidden-color: #666666;
+
+  /* Typography */
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --font-ui: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Layout - Desktop Stack */
+  --taskbar-height: 56px;
+  --statusbar-height: 32px;
+  --desktop-padding: 24px;
+  --message-panel-width: 280px;
+  --message-panel-collapsed: 48px;
+
+  /* Glassmorphism Effects */
+  --glass-bg: rgba(20, 20, 42, 0.8);
+  --glass-border: rgba(139, 92, 246, 0.2);
+  --glass-blur: blur(12px);
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 24px var(--accent-glow);
+
+  /* Z-Index Scale */
+  --z-base: 1;
+  --z-sidebar: 10;
+  --z-header: 20;
+  --z-window: 100;
+  --z-window-active: 150;
+  --z-terminal: 50;
+  --z-cursor: 9999;
+}
