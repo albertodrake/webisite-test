@@ -80,6 +80,32 @@
       </div>
     </main>
 
+    <!-- Terminal -->
+    <footer class="terminal" id="terminalWindow">
+      <div class="terminal-header">
+        <div class="terminal-title">
+          <i data-lucide="terminal"></i>
+          <span>Drake OS Terminal</span>
+        </div>
+        <div class="terminal-controls">
+          <button class="terminal-btn" id="clearTerminal" title="Clear">
+            <i data-lucide="trash-2"></i>
+          </button>
+          <button class="terminal-btn" id="resizeTerminal" title="Resize">
+            <i data-lucide="maximize-2"></i>
+          </button>
+        </div>
+      </div>
+      <div class="terminal-output" id="terminalOutput">
+        <!-- Populated by JavaScript -->
+      </div>
+      <div class="terminal-input-container">
+        <span class="terminal-input-prompt" id="terminalPrompt">drake@drakeos:~$</span>
+        <input type="text" class="terminal-input" id="terminalInput" autocomplete="off" spellcheck="false">
+        <span class="terminal-cursor"></span>
+      </div>
+    </footer>
+
     <!-- Taskbar -->
     <footer class="taskbar">
       <div class="taskbar-start">
@@ -94,31 +120,9 @@
         </div>
       </div>
       <div class="taskbar-end">
-        <button class="taskbar-btn" id="terminalToggle">
-          <i data-lucide="terminal"></i>
+        <button class="taskbar-btn" id="toggleDesktopView">
+          <i data-lucide="monitor"></i>
         </button>
-      </div>
-    </footer>
-
-    <!-- Draggable Terminal -->
-    <footer class="terminal" id="terminalWindow">
-      <div class="terminal-header">
-        <div class="terminal-title">
-          <i data-lucide="terminal"></i>
-          <span>Terminal</span>
-        </div>
-        <div class="terminal-controls">
-          <button class="terminal-btn" id="clearTerminal" title="Clear">
-            <i data-lucide="trash-2"></i>
-          </button>
-        </div>
-      </div>
-      <div class="terminal-output" id="terminalOutput">
-        <!-- Populated by JavaScript -->
-      </div>
-      <div class="terminal-input-line">
-        <span class="terminal-input-prompt">drake@drakeos:~$</span>
-        <span class="terminal-cursor"></span>
       </div>
     </footer>
 

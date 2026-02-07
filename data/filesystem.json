@@ -19,7 +19,7 @@
               "path": "/home/hedge/About_Me.md",
               "fileType": "markdown",
               "icon": "file-text",
-              "content": "# About Alberto Drake\n\n**he/him**\n\nHello! I'm Alberto Drake, and I create exceptional digital experiences!\n\n## What I Do\n\n- Premium Software Development\n- Creative Digital Design\n- Interactive Web Experiences\n- Technology Innovation\n\n## Contact\n\n- **Email**: alberto@drakedigital.com\n- **GitHub**: [AlbertoDrake](https://github.com/AlbertoDrake)\n- **Portfolio**: [drakedigital.com](https://drakedigital.com)\n- **LinkedIn**: [Alberto Drake](https://linkedin.com/in/albertodrake)\n\n## About This Site\n\nWelcome to Drake OS - a premium file browser experience. Navigate through folders, open files, and explore the digital realm!\n\n> Press `Ctrl+H` to reveal hidden files."
+              "content": "# About Alberto Drake\n\n**he/him**\n\nHello! I'm Alberto Drake, and I create exceptional digital experiences!\n\n## What I Do\n\n- Premium Software Development\n- Creative Digital Design\n- Interactive Web Experiences\n- Technology Innovation\n- Hacker-Grade Security Solutions\n\n## Contact\n\n- **Discord**: [@alberto_drake](https://discord.com/users/809729227964284959) 🟣\n- **GitHub**: [AlbertoDrake](https://github.com/AlbertoDrake) 💜\n- **Portfolio**: [drakedigital.com](https://drakedigital.com) 🚀\n- **LinkedIn**: [Alberto Drake](https://linkedin.com/in/albertodrake) 🔗\n\n## About This Site\n\nWelcome to Drake OS - a premium hacker-themed file browser experience. Navigate through folders, open files, and explore the digital realm!\n\n> Press `Ctrl+H` to reveal hidden files.\n> Try the CTF challenge in `.challenge` directory!"
             },
             {
               "name": "Applications",
@@ -127,14 +127,14 @@
                   "description": "My Steam profile - let's play!"
                 },
                 {
-                  "name": "Email.link",
+                  "name": "Discord.link",
                   "type": "file",
-                  "path": "/home/drake/Socials/Email.link",
+                  "path": "/home/drake/Socials/Discord.link",
                   "fileType": "link",
-                  "icon": "mail",
+                  "icon": "message-square",
                   "external": true,
-                  "url": "mailto:alberto@drakedigital.com",
-                  "description": "Contact me directly"
+                  "url": "https://discord.com/users/809729227964284959",
+                  "description": "Connect on Discord - Hacker Mode Active"
                 },
                 {
                   "name": "Patreon.link",
@@ -160,7 +160,7 @@
                   "path": "/home/drake/Projects/Portfolio.sh",
                   "fileType": "shell",
                   "icon": "terminal",
-                  "content": "#!/bin/bash\n# Portfolio Script - Alberto Drake's Projects\n# Run with: ./Portfolio.sh\n\necho \"Loading portfolio...\"\necho \"\"\n\n# Define projects\nprojects=(\n    \"Drake OS - This premium website you're viewing right now!\"\n    \"Digital Design - Cutting-edge creative solutions\"\n    \"Open Source - Premium contributions on GitHub\"\n    \"Innovation - Pushing digital boundaries\"\n)\n\necho \"=== ALBERTO DRAKE'S PROJECTS ===\"\necho \"\"\n\nfor project in \"${projects[@]}\"; do\n    echo \">> $project\"\n    sleep 0.5\ndone\n\necho \"\"\necho \"Portfolio loaded successfully!\"\necho \"Visit GitHub for more: github.com/AlbertoDrake\""
+                  "content": "#!/bin/bash\n# Portfolio Script - Alberto Drake's Projects\n# Run with: ./Portfolio.sh\n\necho \"🔧 Loading hacker portfolio...\"\necho \"\"\n\n# Define projects\nprojects=(\n    \"💻 Drake OS - This premium hacker-themed website you're viewing right now!\"\n    \"🎨 Digital Design - Cutting-edge creative solutions\"\n    \"🌐 Open Source - Premium contributions on GitHub\"\n    \"🚀 Innovation - Pushing digital boundaries\"\n    \"🟣 Discord Integration - Hacker-mode social connections\"\n)\n\necho \"=== 🟣 ALBERTO DRAKE'S HACKER PROJECTS 🟣 ===\"\necho \"\"\n\nfor project in \"${projects[@]}\"; do\n    echo \">> $project\"\n    sleep 0.5\ndone\n\necho \"\"\necho \"🎯 Portfolio loaded successfully!\"\necho \"💜 Connect on Discord: discord.com/users/809729227964284959\"\necho \"🚀 GitHub for more: github.com/AlbertoDrake\""
                 },
                 {
                   "name": "DrakeOS.md",
@@ -168,7 +168,7 @@
                   "path": "/home/drake/Projects/DrakeOS.md",
                   "fileType": "markdown",
                   "icon": "file-text",
-                  "content": "# Drake OS\n\nA premium file browser personal website with modern aesthetics.\n\n## Features\n\n- Premium file browser navigation\n- Glassmorphism windows\n- Advanced terminal system\n- Hidden files (Ctrl+H)\n- Custom sleek cursor\n- Ambient background music\n- Bottom taskbar interface\n\n## Tech Stack\n\n- Modern HTML5, CSS3, JavaScript\n- Lucide Icons\n- JetBrains Mono + Inter fonts\n- Glassmorphism design\n\n## Credits\n\nBuilt with excellence by Alberto Drake."
+                  "content": "# 🟣 Drake OS\n\nA premium hacker-themed file browser personal website with modern aesthetics.\n\n## Features\n\n- 🎮 Premium file browser navigation\n- 💎 Glassmorphism windows\n- 💻 Advanced terminal system with CTF\n- 🔐 Hidden files and secrets (Ctrl+H)\n- 🎯 Custom sleek cursor with glow\n- 🎵 Ambient background music\n- 📱 Modern taskbar interface\n- 🟣 Discord integration\n\n## Tech Stack\n\n- ⚡ Modern HTML5, CSS3, JavaScript\n- 🎨 Lucide Icons\n- 💻 JetBrains Mono + Inter fonts\n- 🔮 Glassmorphism design\n- 🟣 Hacker purple theme\n\n## Credits\n\nBuilt with excellence by Alberto Drake.\n\n> 💜 Connect on Discord: discord.com/users/809729227964284959\n> 🚀 GitHub: github.com/AlbertoDrake"
                 }
               ]
             },
@@ -245,7 +245,52 @@
                   "fileType": "shell",
                   "icon": "terminal",
                   "hidden": true,
-                  "content": "# ~/.bashrc\n# Alberto Drake's bash configuration for Drake OS\n\n# If not running interactively, don't do anything\ncase $- in\n    *i*) ;;\n      *) return;;\nesac\n\n# History settings\nHISTCONTROL=ignoreboth\nHISTSIZE=1000\nHISTFILESIZE=2000\n\n# Aliases\nalias ll='ls -la'\nalias la='ls -A'\nalias l='ls -CF'\nalias gs='git status'\nalias gp='git push'\nalias cls='clear'\n\n# Custom prompt with timestamp\n# Format: [HH:MM:SS] drake@drakeos:~$\nexport PS1='[\\t] \\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ '\n\n# Startup messages\necho \"Drake OS v2.0 initialized\"\necho \"Loading premium filesystem...\"\necho \"System ready\"\necho \"Welcome to Drake OS!\""
+                  "content": "# ~/.bashrc\n# Alberto Drake's bash configuration for Drake OS\n\n# If not running interactively, don't do anything\ncase $- in\n    *i*) ;;\n      *) return;;\nesac\n\n# History settings\nHISTCONTROL=ignoreboth\nHISTSIZE=1000\nHISTFILESIZE=2000\n\n# Aliases\nalias ll='ls -la'\nalias la='ls -A'\nalias l='ls -CF'\nalias gs='git status'\nalias gp='git push'\nalias cls='clear'\n\n# Custom prompt with timestamp\n# Format: [HH:MM:SS] drake@drakeos:~$\nexport PS1='[\\t] \\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ '\n\n# Startup messages\necho \"Drake OS v2.0 initialized\"\necho \"Loading premium filesystem...\"\necho \"System ready\"\necho \"Welcome to Drake OS!\"\necho \"\"\necho \"💡 Pro tip: Some directories are hidden. Try 'ls -la' to see them all...\""
+                }
+              ]
+            },
+            {
+              "name": ".challenge",
+              "type": "folder",
+              "path": "/home/drake/.challenge",
+              "icon": "flag",
+              "hidden": true,
+              "children": [
+                {
+                  "name": "readme.md",
+                  "type": "file",
+                  "path": "/home/drake/.challenge/readme.md",
+                  "fileType": "markdown",
+                  "icon": "file-text",
+                  "hidden": true,
+                  "content": "# 🚀 Drake OS CTF Challenge\n\nWelcome, brave explorer! You've discovered the hidden challenge directory.\n\n## The Mission\nA flag is hidden somewhere in this system. Can you find it?\n\n## Commands That Might Help\n- `find . -name \"*flag*\"` - Search for files with 'flag' in the name\n- `grep -r \"DRAKE\"` - Search for the word 'DRAKE' in all files\n- `ls -la` - List all files including hidden ones\n- `cat` - Read file contents\n- `submit [flag]` - Submit your discovered flag\n\n## Hint\nSometimes the most valuable things are hidden in plain sight.\nCheck the `.config` directory...\n\nGood luck, hacker! 🏴‍☠️"
+                },
+                {
+                  "name": ".config",
+                  "type": "folder",
+                  "path": "/home/drake/.challenge/.config",
+                  "icon": "settings",
+                  "hidden": true,
+                  "children": [
+                    {
+                      "name": "system.json",
+                      "type": "file",
+                      "path": "/home/drake/.challenge/.config/system.json",
+                      "fileType": "text",
+                      "icon": "file-code",
+                      "hidden": true,
+                      "content": "{\n  \"system\": \"Drake OS\",\n  \"version\": \"2.0.0\",\n  \"user\": \"drake\",\n  \"encryption\": {\n    \"method\": \"ROT13\",\n    \"hint\": \"The flag is encoded in this comment\"\n  },\n  \"flag\": \"QENFGV{DR4K3_0S_EXPL0R3R_W3LC0M3}\"\n}"
+                    },
+                    {
+                      "name": ".hint_file",
+                      "type": "file",
+                      "path": "/home/drake/.challenge/.config/.hint_file",
+                      "fileType": "text",
+                      "icon": "file-text",
+                      "hidden": true,
+                      "content": "ROT13 Encoding: Each letter is shifted 13 places in the alphabet.\nA→N, B→O, C→P, etc.\nThe flag above looks like gibberish, but try decoding it...\n\nUse the 'submit' command when you think you have the answer!\n\nsubmit [your_flag_guess]"
+                    }
+                  ]
                 }
               ]
             }

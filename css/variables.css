@@ -8,12 +8,13 @@
   --bg-hover: #2a2a3a;
   --bg-active: #33334a;
 
-  /* Accent Colors - Purple/Gold */
-  --accent-primary: #8b5cf6;
+  /* Accent Colors - Hacker Purple/Blue */
+  --accent-primary: #9333ea;
   --accent-secondary: #fbbf24;
   --accent-tertiary: #c084fc;
-  --accent-glow: rgba(139, 92, 246, 0.4);
-  --accent-gradient: linear-gradient(135deg, #8b5cf6, #fbbf24);
+  --accent-glow: rgba(147, 51, 234, 0.4);
+  --accent-gradient: linear-gradient(135deg, #9333ea, #7289da);
+  --hacker-gradient: linear-gradient(45deg, #9333ea, #7289da, #c084fc);
 
   /* Text Colors */
   --text-primary: #e0e0e0;
@@ -31,6 +32,8 @@
   --file-color: #e0e0e0;
   --executable-color: #8b5cf6;
   --link-color: #fbbf24;
+  --discord-color: #7289da;
+  --hacker-purple: #9333ea;
   --hidden-color: #666666;
 
   /* Typography */
@@ -52,6 +55,7 @@
   /* Layout - Desktop Stack */
   --taskbar-height: 56px;
   --statusbar-height: 32px;
+  --terminal-height: 200px;
   --desktop-padding: 24px;
   --message-panel-width: 280px;
   --message-panel-collapsed: 48px;

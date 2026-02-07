@@ -97,6 +97,21 @@
   font-style: italic;
 }
 
+.terminal-line.command {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.terminal-line.output {
+  display: block;
+}
+
+.terminal-line.output .terminal-content {
+  white-space: pre-wrap;
+  font-family: var(--font-mono);
+}
+
 /* Optional CRT effect */
 .terminal.crt::after {
   content: '';
@@ -116,8 +131,8 @@
   opacity: 0.3;
 }
 
-/* Input line (decorative) */
-.terminal-input-line {
+/* Input line */
+.terminal-input-container {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
@@ -130,6 +145,24 @@
 .terminal-input-prompt {
   color: var(--accent-primary);
   white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  outline: none;
+  min-width: 0;
+}
+
+.terminal-input::selection {
+  background: var(--accent-primary);
+  color: white;
 }
 
 .terminal-cursor {

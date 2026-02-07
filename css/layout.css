@@ -1,10 +1,11 @@
 .drakeos {
   display: grid;
   grid-template-columns: 1fr var(--message-panel-width);
-  grid-template-rows: var(--statusbar-height) 1fr var(--taskbar-height);
+  grid-template-rows: var(--statusbar-height) 1fr var(--terminal-height) var(--taskbar-height);
   grid-template-areas:
     "statusbar messagepanel"
     "desktop messagepanel"
+    "terminal messagepanel"
     "taskbar messagepanel";
   height: 100vh;
   width: 100vw;
@@ -126,30 +127,17 @@
   border-color: var(--accent-primary);
 }
 
-/* Draggable Terminal Window */
+/* Permanent Terminal at Bottom */
 .terminal {
-  position: fixed;
-  bottom: var(--taskbar-height);
-  left: 50%;
-  transform: translateX(-50%);
-  width: 600px;
-  height: 200px;
+  grid-area: terminal;
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--space-sm) var(--space-sm) 0 0;
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
   z-index: var(--z-terminal);
-  display: none;
+  display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-lg);
-}
-
-.terminal.visible {
-  display: flex;
-}
-
-.terminal.minimized {
-  height: 32px;
 }
 
 .windows-container {

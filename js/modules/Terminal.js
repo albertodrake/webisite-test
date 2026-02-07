@@ -130,4 +130,86 @@ export class Terminal {
   logHiddenToggle(show) {
     this.log(show ? 'show hidden files' : 'hide hidden files', 'system');
   }
+
+  /**
+   * Log command execution
+   */
+  logCommand(path, command) {
+    const line = document.createElement('div');
+    line.className = 'terminal-line command';
+
+    const prompt = document.createElement('span');
+    prompt.className = 'terminal-prompt';
+    const shortPath = path.replace('/home/drake', '~');
+    prompt.textContent = `drake@drakeos:${shortPath}$`;
+
+    const content = document.createElement('span');
+    content.className = 'terminal-content';
+    content.textContent = ' ' + command;
+
+    line.appendChild(prompt);
+    line.appendChild(content);
+
+    this.output.appendChild(line);
+    this.lines.push(line);
+
+    // Trim old lines
+    while (this.lines.length > this.maxLines) {
+      const oldLine = this.lines.shift();
+      oldLine.remove();
+    }
+
+    // Auto-scroll to bottom
+    this.scrollToBottom();
+  }
+
+  /**
+   * Output plain text (without timestamp)
+   */
+  output(text) {
+    const line = document.createElement('div');
+    line.className = 'terminal-line output';
+
+    const content = document.createElement('span');
+    content.className = 'terminal-content';
+    content.textContent = text;
+
+    line.appendChild(content);
+    this.output.appendChild(line);
+    this.lines.push(line);
+
+    // Trim old lines
+    while (this.lines.length > this.maxLines) {
+      const oldLine = this.lines.shift();
+      oldLine.remove();
+    }
+
+    // Auto-scroll to bottom
+    this.scrollToBottom();
+  }
+
+  /**
+   * Output HTML (for colored content)
+   */
+  outputHTML(html) {
+    const line = document.createElement('div');
+    line.className = 'terminal-line output';
+
+    const content = document.createElement('span');
+    content.className = 'terminal-content';
+    content.innerHTML = html;
+
+    line.appendChild(content);
+    this.output.appendChild(line);
+    this.lines.push(line);
+
+    // Trim old lines
+    while (this.lines.length > this.maxLines) {
+      const oldLine = this.lines.shift();
+      oldLine.remove();
+    }
+
+    // Auto-scroll to bottom
+    this.scrollToBottom();
+  }
 }
